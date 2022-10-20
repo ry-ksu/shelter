@@ -1,0 +1,61 @@
+.button_primary {
+  background-color: $color-primary;
+  height: 52px;
+  border-radius: 100px;
+  color: $color-dark-3xl;
+  border: 1px solid $color-primary;
+
+  &:hover {
+    cursor: pointer;
+    background: $color-primary-light;
+  }
+}
+
+.button_primary_make-a-friend {
+  width: 207px;
+}
+
+.card__button {
+  border-radius: 100px;
+  margin-left: 42px;
+  height: 52px;
+  width: 187px;
+  text-align: center;
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+  background: $color-light-s;
+  color: $color-dark-3xl;
+}
+
+.button_arrow {
+  border: 2px solid $color-primary;
+  background: $color-light-l;
+  color: $color-dark-3xl;
+
+  &:hover {
+    cursor: pointer;
+    background: $color-primary-light;
+  }
+}
+
+.in-addition__credit-card {
+  width: 349px;
+  height: 43px;
+  background: $color-primary;
+  border-radius: 9px;
+  &:hover {
+    background: $color-primary-light;
+  }
+  @include media-tablet-mini {
+    width: 281px;
+  }
+}
+
+.button_arrow,
+.ready-button,
+.inactive-button,
+.active-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+}

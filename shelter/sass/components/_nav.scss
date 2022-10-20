@@ -1,0 +1,43 @@
+.header__navigation {
+  padding-top: 6px;
+  width: 443px;
+  height: 27px;
+
+  @include media-tablet-mini {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    > * {
+      display: inline-block;
+    }
+    .navigation__li_active {
+      color: $color-light-s;
+      border-bottom: 3px solid $color-primary;
+      padding-bottom: 4px;
+    }
+    .navigation__li {
+      color: $color-dark-s;
+      &:hover {
+        color: $color-light-s;
+      }
+    }
+  }
+}
+
+.header-pets {
+  .header__navigation {
+    .navigation__li {
+      color: $color-dark-l;
+      &:hover {
+        color: $color-dark-3xl;
+      }
+    }
+    .navigation__li_active {
+      color: $color-dark-3xl;
+    }
+  }
+}

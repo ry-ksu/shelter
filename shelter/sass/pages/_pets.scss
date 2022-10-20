@@ -1,0 +1,102 @@
+.our-friends_pets {
+  background: $color-light-l;
+
+  .wrapper {
+    @include media-tablet {
+      padding-bottom: 65px;
+    }
+
+    @include media-mobile-big {
+      padding: 40px 10px 33px;
+    }
+  }
+
+  .our-friends_pets__title {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color: $color-dark-l;
+
+    @include media-mobile-big {
+      width: 300px;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+    gap: 30px 3.3%;
+
+    @include media-desktop-big {
+      .card_8,
+      .card_7 {
+        display: none;
+      }
+
+      justify-content: center;
+      gap: 30px 6.75%;
+    }
+    @include media-tablet {
+      padding: 30px 0;
+      width: 580px;
+      margin: auto;
+    }
+
+    @include media-mobile-big {
+      padding: 45px 0 30px;
+      .card_6,
+      .card_5,
+      .card_4 {
+        display: none;
+      }
+      width: 270px;
+      margin: auto;
+    }
+  }
+
+  .navigation {
+    margin: 0 auto;
+    width: 340px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-tablet {
+      padding: 10px 0px;
+    }
+
+    @include media-mobile-big {
+      width: 300px;
+    }
+
+    p {
+      margin: 0;
+      position: relative;
+      bottom: 2px;
+    }
+
+    .active-button {
+      border: 2px solid $color-primary;
+      background: $color-primary;
+      color: $color-dark-3xl;
+    }
+
+    .ready-button {
+      border: 2px solid $color-primary;
+      background: $color-light-l;
+      color: $color-dark-3xl;
+      &:hover {
+        cursor: pointer;
+        background: $color-primary-light;
+      }
+    }
+
+    .inactive-button {
+      border: 2px solid $color-dark-s;
+      background: $color-light-l;
+      color: $color-dark-s;
+    }
+  }
+}

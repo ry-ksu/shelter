@@ -1,0 +1,103 @@
+//Header for main
+
+.header__wrapper {
+  position: relative;
+  top: 60px;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  @include media-tablet {
+    padding: 0 30px;
+    top: 30px;
+  }
+
+  @include media-mobile {
+    padding: 0 10px;
+  }
+
+  .logo__subtitle {
+    color: $color-light-xl;
+    position: relative;
+    top: 10px;
+    left: 4px;
+  }
+
+  .logo__title {
+    color: $color-primary;
+  }
+
+  .hamburger {
+    z-index: 4;
+    .hamburger__line {
+      border: 1px solid $color-primary;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+  }
+  @include media-tablet-mini {
+    margin: 19px 43px 0 0;
+  }
+
+  .hamburger__line {
+    display: none;
+    width: 27px;
+    height: 0;
+
+    @include media-tablet-mini {
+      display: inline-block;
+    }
+  }
+}
+
+//Header for pets
+
+.header-pets {
+  padding: 30px 40px 40px;
+  margin: auto;
+  max-width: 1200px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: $color-light-xl;
+  z-index: 1;
+
+  @include media-tablet {
+    padding: 30px 30px 40px;
+  }
+
+  @include media-mobile-big {
+    padding: 30px 10px 40px;
+  }
+
+  .hamburger {
+    .hamburger__line {
+      border: 1px solid #000000;
+      z-index: 4;
+    }
+  }
+
+  .logo__subtitle {
+    position: relative;
+    top: 10px;
+    left: 4px;
+    color: $color-dark-l;
+  }
+
+  .logo__title {
+    color: $color-dark-3xl;
+  }
+}

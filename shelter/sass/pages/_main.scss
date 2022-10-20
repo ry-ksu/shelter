@@ -1,0 +1,354 @@
+//block 'Not only'
+
+.not-only__wrapper {
+  padding: 80px 0 0;
+  margin: auto;
+  max-width: 1280px;
+  @include media-tablet {
+    padding: 40px 0 0;
+  }
+
+  .layout-2-columns__not-only {
+    padding: 100px 0px 0 0;
+    margin: 0 13px;
+    justify-content: center;
+    gap: 3.3%;
+    .layout-3-rows {
+      padding: 163px 0 150px 0;
+      gap: 42px;
+      @include media-tablet {
+        padding: 10px 0 0 0;
+      }
+      @include media-mobile {
+        align-items: center;
+      }
+
+      .not-only__tittle {
+        color: $color-light-xl;
+        @include media-mobile {
+          text-align: center;
+        }
+      }
+
+      .not-only__paragragh {
+        max-width: 460px;
+        color: $color-dark-s;
+        @include media-mobile {
+          text-align: center;
+        }
+      }
+
+      .button_primary {
+        @include media-tablet {
+          margin-left: calc(50% - 105px);
+        }
+        @include media-mobile {
+          margin: auto;
+        }
+      }
+    }
+  }
+  .start-screen-puppy {
+    background-size: cover;
+    width: 698px;
+    height: 728px;
+    @include media-tablet {
+      width: 569px;
+      height: 593px;
+      margin-left: 18.8%;
+      margin-top: 100px;
+      @include media-tablet-mini {
+        height: 271px;
+        width: 260px;
+        margin-top: 105px;
+        margin-left: 13%;
+      }
+    }
+  }
+}
+
+// Block 'About'
+
+.about {
+  background: $color-light-xl;
+  .layout-2-columns {
+    gap: 120px;
+    justify-content: center;
+    @include media-tablet {
+      gap: 80px;
+    }
+
+    @include media-tablet-mini {
+      gap: 40px;
+    }
+    .about__photo {
+      background-size: cover;
+      width: 300px;
+      height: 408px;
+      @include media-tablet {
+        order: 1;
+      }
+      @include media-tablet-mini {
+        width: 260px;
+        height: 353.6px;
+      }
+    }
+
+    .layout-3-rows {
+      width: 430px;
+      padding-top: 14px;
+      justify-content: start;
+      gap: 25px;
+      @include media-tablet {
+        padding-top: 0;
+      }
+      .about__content__title {
+        color: $color-dark-l;
+        @include media-mobile {
+          text-align: center;
+        }
+      }
+      .paragraph-l {
+        color: $color-dark-xl;
+        @include media-mobile {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+// Block 'Our-friends'
+
+.our-friends {
+  background: $color-light-l;
+  .wrapper {
+    @include media-mobile {
+      padding: 40px 10px 43px;
+    }
+  }
+
+  .our-friends__title {
+    text-align: center;
+    color: $color-dark-l;
+  }
+
+  .layout-3-columns {
+    align-items: center;
+    padding: 60px 40px;
+
+    @include media-desktop {
+      padding: 59px 0;
+      width: 708px;
+      margin: auto;
+    }
+
+    @include media-tablet-s {
+      .card_jennifer {
+        display: none;
+      }
+    }
+
+    @include media-tablet-mini {
+      width: 270px;
+      margin: auto;
+      justify-content: center;
+      gap: 20px 80px;
+      padding: 42px 0;
+
+      #button_arrow_left {
+        order: 1;
+      }
+      #button_arrow_right {
+        order: 2;
+      }
+    }
+  }
+
+  .button_primary {
+    width: 261px;
+    height: 52px;
+    margin-left: calc(50% - 130px);
+  }
+}
+
+.cards-container {
+  width: 1080px;
+  overflow: hidden;
+
+  @include media-tablet {
+    width: 584px;
+  }
+
+  @include media-mobile {
+    width: 270px;
+  }
+  .carousel {
+    display: flex;
+    position: relative;
+    left: -1080px;
+    @include media-tablet {
+      left: -619px;
+      gap: 40px;
+    }
+    @include media-mobile {
+      left: -270px;
+      gap: 0;
+    }
+
+    #items_left,
+    #items_active,
+    #items_right {
+      display: flex;
+      width: 1080px;
+      padding: 0 45px;
+      gap: 90px;
+      @include media-tablet {
+        padding: 0;
+        width: 664px;
+        gap: 40px;
+      }
+      @include media-mobile {
+        padding: 0;
+        width: 270px;
+        gap: 0;
+      }
+    }
+  }
+}
+
+.modal_pet {
+  position: absolute;
+  width: 270px;
+  height: 435px;
+  z-index: 1;
+}
+//Block 'Help'
+.help {
+  background: $color-light-xl;
+  .wrapper {
+    @include media-mobile {
+      padding: 40px 20px 43px;
+    }
+  }
+}
+
+.help__title {
+  width: 310px;
+  margin: auto;
+  text-align: center;
+  color: $color-dark-l;
+  @include media-tablet-mini {
+    width: 300px;
+    position: relative;
+    right: 10px;
+  }
+}
+
+.layout-flex-rows {
+  padding: 60px 87px 0;
+  gap: 55px 119px;
+  justify-content: center;
+  @include media-tablet {
+    padding: 60px 0 0;
+    gap: 55px 60px;
+  }
+  @include media-mobile {
+    gap: 30px 0px;
+    width: 285px;
+    justify-content: space-between;
+    padding-top: 43px;
+    margin: auto;
+  }
+
+  .help__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 113px;
+    text-align: center;
+    @include media-tablet {
+      width: 170px;
+    }
+    @include media-mobile {
+      width: 125px;
+      height: 87px;
+    }
+
+    .help__img {
+      height: 60px;
+      @include media-mobile {
+        height: 50px;
+      }
+    }
+
+    .help__name {
+      color: $color-dark-l;
+    }
+  }
+}
+
+//Block 'In addition'
+
+.in-addition {
+  background: $color-light-l;
+  .layout-2-columns {
+    justify-content: center;
+    gap: 30px;
+    .in-addition__img {
+      width: 505px;
+      height: 261px;
+      margin-top: 9px;
+      @include media-tablet {
+        order: 1;
+        margin-top: 31px;
+      }
+      @include media-tablet-mini {
+        background-size: cover;
+        width: 260px;
+        height: 135.2px;
+        margin-top: 14px;
+      }
+    }
+
+    .layout-3-rows {
+      width: 380px;
+      justify-content: flex-start;
+      gap: 19px;
+
+      @include media-tablet-mini {
+        width: 281px;
+        align-items: center;
+      }
+
+      .in-addition__title,
+      .in-addition__name-of-bank {
+        color: $color-dark-l;
+        @include media-tablet-mini {
+          text-align: center;
+        }
+      }
+
+      .credit-card__img {
+        padding: 11px 14px;
+      }
+
+      .credit-card__card-number {
+        color: $color-dark-l;
+        position: relative;
+        bottom: 17px;
+        @include media-tablet-mini {
+          bottom: 18px;
+          right: 1px;
+        }
+      }
+
+      .credit-card__paragraph {
+        color: $color-dark-m;
+        @include media-tablet-mini {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

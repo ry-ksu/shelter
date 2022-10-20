@@ -1,0 +1,30 @@
+.card {
+  width: 270px;
+  height: 435px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  background: $color-light-s;
+  &:hover {
+    background: darken($color-light-s, 5%);
+    //outline: 2px solid darken($color-light-s, 10%);
+    //transform: scale(1.1);
+    cursor: pointer;
+
+    .card__button {
+      background: $color-primary-light;
+      cursor: pointer;
+    }
+  }
+
+  .card__pets-img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .card__pets-name {
+    text-align: center;
+    color: $color-dark-l;
+  }
+}

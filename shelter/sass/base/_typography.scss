@@ -1,0 +1,182 @@
+a {
+  text-decoration: none;
+}
+
+h1 {
+  @include typography($size: 32px, $height: 110%);
+}
+
+h2 {
+  @include typography($size: 44px, $letter-spacing: 0);
+}
+
+h3 {
+  @include typography($size: 35px);
+}
+
+h2,
+h3 {
+  @include media-tablet-mini {
+    @include typography($size: 25px, $height: 32.5px);
+  }
+}
+
+h4,
+span {
+  @include typography($height: 115%);
+}
+
+h4,
+.credit-card__card-number {
+  @include media-tablet-mini {
+    @include typography($size: 15px, $height: 16.5px);
+  }
+}
+
+.locations__boston__address {
+  @include typography($height: 115%);
+}
+
+h5 {
+  @include typography($size: 15px, $height: 110%);
+  @include media-tablet-mini {
+    @include typography($size: 15px, $height: 160%, $letter-spacing: 0em);
+  }
+}
+
+.paragraph-l {
+  @include typography(
+    $family: $font-additional,
+    $size: 15px,
+    $height: 160%,
+    $letter-spacing: 0
+  );
+}
+
+.logo__title {
+  @include typography($size: 32px, $height: 110%);
+}
+
+.logo__subtitle {
+  @include typography(
+    $family: $font-additional,
+    $size: 13px,
+    $height: 15px,
+    $letter-spacing: 0.1em
+  );
+}
+
+.button_primary {
+  @include typography($size: 17px, $height: 15px);
+}
+
+.card__pets-name {
+  @include typography($height: 23px);
+}
+
+.card__button {
+  @include typography($size: 17px);
+}
+
+.modal__text_base-info {
+  h3 {
+    @include media-mobile {
+      @include typography($size: 35px);
+    }
+  }
+  h4 {
+    @include media-mobile {
+      @include typography($size: 20px, $height: 115%);
+    }
+  }
+}
+
+.h5-modal-window span {
+  @include typography($size: 15px, $height: 110%);
+}
+
+.h5-modal-window_descriptions {
+  @include media-tablet {
+    @include typography($size: 13px, $height: 110%, $letter-spacing: 0.059em);
+  }
+}
+
+.credit-card__paragraph {
+  @include typography(
+    $family: $font-additional,
+    $style: italic,
+    $size: 12px,
+    $height: 18px,
+    $letter-spacing: 0
+  );
+}
+
+.paragraph-mobile-menu {
+  @include typography(
+    $family: $font-additional,
+    $size: 32px,
+    $height: 160%,
+    $letter-spacing: 0
+  );
+}
+
+.button_arrow {
+  @include typography($size: 17px);
+}
+.legal-information {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.pets-name {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px; /* identical to box height */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.how-you-can-help,
+.help-txt {
+  text-align: center;
+}
+
+.heading_our_friends {
+  margin: 0;
+  text-align: center;
+}
+
+.card-button,
+#make-a-friend-button,
+#get-to-know-button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.button-arrow,
+.active-button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.inactive-button,
+.ready-button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}

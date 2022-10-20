@@ -1,0 +1,84 @@
+@keyframes move-right {
+  from { left:-1080px;}
+  to { left: -2160px;}
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 2s;
+}
+
+@keyframes move-right_tablet {
+    from { left:-634px;}
+    to { left: -1238px;}
+}
+
+.transition-right_tablet {
+    animation-name: move-right_tablet;
+    animation-duration: 2s;
+}
+
+@keyframes move-right_mobile {
+    from { left: -270px;}
+    to { left: -540px;}
+}
+
+.transition-right_mobile {
+    animation-name: move-right_mobile;
+    animation-duration: 2s;
+}
+
+@keyframes move-left {
+    from { left: -1080px;}
+    to { left: 0px;}
+}
+
+@keyframes move-left_tablet {
+    from { left:-604px;}
+    to { left: 0px;}
+}
+
+@keyframes move-left_mobile {
+    from { left:-270px;}
+    to { left: 0px;}
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 2s;
+}
+
+.transition-left_tablet {
+    animation-name: move-left_tablet;
+    animation-duration: 2s;
+}
+
+.transition-left_mobile {
+    animation-name: move-left_mobile;
+    animation-duration: 2s;
+}
+
+@keyframes move-burger {
+    from { left: 320px;}
+    to { left: 0px;}
+  }
+  
+.transition-burger {
+    animation-name: move-burger;
+    animation-duration: 1s;
+}
+
+@keyframes return-burger {
+    from { left: 0px;}
+    to { left: 320px;}
+  }
+  
+.return-burger {
+    animation-name: return-burger;
+    animation-duration: 1s;
+}
+
+
+.hidden {
+    display: none !important;
+}

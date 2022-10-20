@@ -1,0 +1,23 @@
+.layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-3-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-3-rows {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.layout-flex-rows {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
